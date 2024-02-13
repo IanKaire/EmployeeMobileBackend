@@ -32,6 +32,10 @@ app.listen(port, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
 
+app.get("/", (req, res, next) => {
+  res.send("Working");
+});
+
 const Employee = require("./models/employee");
 
 //endpoint to register a employee
