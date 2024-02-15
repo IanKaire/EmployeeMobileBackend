@@ -37,6 +37,8 @@ app.get("/", (req, res, next) => {
 });
 
 const Employee = require("./models/employee");
+const Attendance = require("./models/attendance");
+
 
 //endpoint to register a employee
 app.post("/addEmployee", async (req, res) => {
